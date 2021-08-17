@@ -1,3 +1,4 @@
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Button from '../components/Button';
 import Card from '../components/Card';
@@ -12,138 +13,136 @@ import SvgCharts from '../svg/SvgCharts';
 
 const Index = () => (
   <Layout>
-    <section className="pt-20 md:pt-40">
-      <div className="container mx-auto px-8 lg:flex">
+    <section className="py-20">
+      <div className="container mx-auto px-8 lg:flex items-center">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Main title of your landing page
+            想いをwebへ
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            Free landing page template to promote your business startup and generate leads for the
-            offered services
+            お客様の「作りたい」を実現！
           </p>
-          <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
-          </p>
-          <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
         </div>
         <div className="lg:w-1/2">
           <HeroImage />
         </div>
       </div>
     </section>
-    <section id="features" className="py-20 lg:pb-40 lg:pt-48">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Main Features</h2>
+    <section id="features" className="">
+      <div className="container mx-auto px-4 mb-20 text-center">
+        <h2 className="text-3xl font-semibold">コードテラスでは、ホームページやwebサービスを制作しています</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service One</p>
+              <p className="font-semibold text-xl">webページ制作</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
+                会社個人問わず、ランディングページの制作やホームページ制作をしています。SEOを重視したサイト設計を行いつつ、お客様の「作りたい」ホームページを作ります。
+              </p> 
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Two</p>
+              <p className="font-semibold text-xl">webサービス開発</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Three</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                ポイントシステムや出退勤アプリなど、社内webアプリや新規webサービスなどお客様の「作りたい」を実現します。
               </p>
             </Card>
           </div>
         </div>
       </div>
     </section>
-    <SplitSection
-      id="services"
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-            against the closest competitors
-          </p>
-        </div>
-      }
-      secondarySlot={<SvgCharts />}
-    />
-    <SplitSection
-      reverseOrder
-      primarySlot={
-        <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            Once the market analysis process is completed our staff will search for opportunities
-            that are in reach
-          </p>
-        </div>
-      }
-      secondarySlot={<SvgCharts />}
-    />
-    <SplitSection
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Search For Performance Optimization
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            With all the information in place you will be presented with an action plan that your
-            company needs to follow
-          </p>
-        </div>
-      }
-      secondarySlot={<SvgCharts />}
-    />
-    <section id="stats" className="py-20 lg:pt-32">
-      <div className="container mx-auto text-center">
-        <LabelText className="text-gray-600">Our customers get results</LabelText>
-        <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
+    <section id="achievement" className="mb-20">
+      <h2 className="text-3xl font-semibold text-center">制作実績</h2>
+      <div className="container px-4 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <Card className="mb-8 text-center h-full">
+              <p className="font-semibold text-xl mb-4">クレジットカード<br />ランキングLP</p>
+              <StaticImage 
+                alt="クレジットカードランキングLP"
+                src="../images/achievement_credit-card-lp.png"
+              />
+            </Card>
           </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
+          <div>
+          <Card className="mb-8 text-center h-full">
+              <a href=""></a>
+              <p className="font-semibold text-xl mb-4">広告会社<br />動画制作LP</p>
+              <StaticImage 
+                alt="広告会社動画制作LP"
+                src="../images/achievement_ad-n-video-lp.png"
+              />
+            </Card>
           </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
+          <div>
+            <Card className="mb-8 text-center h-full">
+              <p className="font-semibold text-xl mb-4">広告会社<br />リスティング広告LP</p>
+              <StaticImage 
+                alt="広告会社リスティング広告LP"
+                src="../images/achievement_ad-n-ads-lp.png"
+              />
+            </Card>
+          </div>
+          <div>
+            <Card className="mb-8 text-center h-full">
+              <p className="font-semibold text-xl mb-4">結婚式ムービー制作会社<br />ホームページ</p>
+              <StaticImage 
+                alt="結婚式ムービー制作会社HP"
+                src="../images/achievement_lcm-atelier-hp.png"
+              />
+            </Card>
+          </div>
+          <div>
+            <Card className="mb-8 text-center h-full">
+              <p className="font-semibold text-xl mb-4">言語学習SNS<br />Our Dictionary</p>
+              <StaticImage 
+                alt="ourdictionary"
+                src="../images/achievement_ourdictionary.png"
+              />
+            </Card>
+          </div>
+          <div>
+            <Card className="mb-8 text-center h-full">
+              <p className="font-semibold text-xl mb-4">簡単フォーム作成<br />Set Form</p>
+              <StaticImage 
+                alt="広告会社リスティング広告LP"
+                src="../images/achievement_set-form.png"
+              />
+            </Card>
           </div>
         </div>
       </div>
     </section>
-    <section id="testimonials" className="py-20 lg:py-40">
-      <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
-        <div className="flex flex-col md:flex-row md:-mx-3">
-          {customerData.map(customer => (
-            <div key={customer.customerName} className="flex-1 px-3">
-              <CustomerCard customer={customer} />
-            </div>
-          ))}
+    <section id="solution" className="mb-20">
+      <h2 className="text-3xl font-semibold text-center mb-4">制作の例</h2>
+      <div className="container px-4 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <h3 className="text-xl font-semibold text-center mb-3">webサイト制作</h3>
+            <ul className="list-inside list-disc">
+              <li>個人ブログを制作したい</li>
+              <li>Wordpressの独自のテンプレートを作りたい</li>
+              <li>自社でニュースやコラムを更新できるコーポレートサイトを作りたい</li>
+              <li>自社でECサイトを作成したい</li>
+              <li>既存サイトの内部SEOを意識して再構築したい</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-center mb-3">webサービス</h3>
+            <ul className="list-disc list-inside">
+              <li>出退勤アプリを作成したい</li>
+              <li>飲食店でポイントシステムを導入したい</li>
+              <li>自社でニュースやコラムを更新できるコーポレートサイトを作りたい</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
-      <p className="mt-8 text-xl font-light">
-        Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus in.
-      </p>
-      <p className="mt-8">
-        <Button size="xl">Get Started Now</Button>
-      </p>
+    <section className="container mx-auto mb-20 py-6 bg-gray-200 rounded-lg text-center">
+      <h3 className="text-2xl font-semibold mb-4">お問い合わせはこちら</h3>
+      <a href="mailto:aki10.working@gmail.com" className="mt-8">
+        <Button size="xl">お問い合わせ</Button>
+      </a>
     </section>
   </Layout>
 );
