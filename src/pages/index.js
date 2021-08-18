@@ -52,12 +52,12 @@ const Index = () => (
       </div>
     </section>
     <section id="achievement" className="mb-20">
-      <h2 className="text-3xl font-semibold text-center">制作実績</h2>
+      <h2 className="text-3xl font-semibold text-center mb-4">制作実績</h2>
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <Card className="mb-8 text-center h-full">
-              <p className="font-semibold text-xl mb-4">クレジットカード<br />ランキングLP</p>
+              <a href="https://akiblog10.com/web-programming-sample/lp_3571016/" className="font-semibold text-xl mb-4 block">クレジットカード<br />ランキングLP</a>
               <StaticImage 
                 alt="クレジットカードランキングLP"
                 src="../images/achievement_credit-card-lp.png"
@@ -66,8 +66,7 @@ const Index = () => (
           </div>
           <div>
           <Card className="mb-8 text-center h-full">
-              <a href=""></a>
-              <p className="font-semibold text-xl mb-4">広告会社<br />動画制作LP</p>
+              <a href="http://ad-n.co.jp/video/" className="font-semibold text-xl mb-4 block">広告会社<br />動画制作LP</a>
               <StaticImage 
                 alt="広告会社動画制作LP"
                 src="../images/achievement_ad-n-video-lp.png"
@@ -76,7 +75,7 @@ const Index = () => (
           </div>
           <div>
             <Card className="mb-8 text-center h-full">
-              <p className="font-semibold text-xl mb-4">広告会社<br />リスティング広告LP</p>
+              <a href="http://ad-n.co.jp/lop-lite/" className="font-semibold text-xl mb-4 block">広告会社<br />リスティング広告LP</a>
               <StaticImage 
                 alt="広告会社リスティング広告LP"
                 src="../images/achievement_ad-n-ads-lp.png"
@@ -85,7 +84,7 @@ const Index = () => (
           </div>
           <div>
             <Card className="mb-8 text-center h-full">
-              <p className="font-semibold text-xl mb-4">結婚式ムービー制作会社<br />ホームページ</p>
+              <a href="https://lcm-atelier.com" className="font-semibold text-xl mb-4 block">結婚式ムービー制作会社<br />ホームページ</a>
               <StaticImage 
                 alt="結婚式ムービー制作会社HP"
                 src="../images/achievement_lcm-atelier-hp.png"
@@ -94,7 +93,7 @@ const Index = () => (
           </div>
           <div>
             <Card className="mb-8 text-center h-full">
-              <p className="font-semibold text-xl mb-4">言語学習SNS<br />Our Dictionary</p>
+              <a href="https://ourdictionary.net/" className="font-semibold text-xl mb-4 block">言語学習SNS<br />Our Dictionary</a>
               <StaticImage 
                 alt="ourdictionary"
                 src="../images/achievement_ourdictionary.png"
@@ -103,7 +102,7 @@ const Index = () => (
           </div>
           <div>
             <Card className="mb-8 text-center h-full">
-              <p className="font-semibold text-xl mb-4">簡単フォーム作成<br />Set Form</p>
+              <a href="https://setform.site/" className="font-semibold text-xl mb-4 block">簡単フォーム作成<br />Set Form</a>
               <StaticImage 
                 alt="広告会社リスティング広告LP"
                 src="../images/achievement_set-form.png"
