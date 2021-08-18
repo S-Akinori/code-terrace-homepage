@@ -10,6 +10,7 @@ import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
+import { Link } from 'gatsby';
 
 const Index = () => (
   <Layout>
@@ -139,9 +140,9 @@ const Index = () => (
     </section>
     <section className="container mx-auto mb-20 py-6 bg-gray-200 rounded-lg text-center">
       <h3 className="text-2xl font-semibold mb-4">お問い合わせはこちら</h3>
-      <a href="mailto:aki10.working@gmail.com" className="mt-8">
+      <Link to="/contact" className="mt-8">
         <Button size="xl">お問い合わせ</Button>
-      </a>
+      </Link>
     </section>
   </Layout>
 );

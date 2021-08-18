@@ -2,7 +2,7 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
-import {useStaticQuery, graphql } from 'gatsby';
+import {useStaticQuery, graphql, Link } from 'gatsby';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -22,7 +22,9 @@ const Header = () => {
           <div className="w-12 mr-3">
             <LogoIcon />
           </div>
-        {data.site.siteMetadata.title}
+          <Link to="/">
+            {data.site.siteMetadata.title}
+          </Link>
         </div>
         {/* <div className="flex mt-4 sm:mt-0">
           <AnchorLink className="px-4" href="#features">
@@ -39,9 +41,9 @@ const Header = () => {
           </AnchorLink>
         </div> */}
         <div className="hidden md:block">
-          <a href="mailto:aki10.working@gmail.com">
+          <Link to="/contact">
             <Button className="text-sm">お問い合わせはこちら</Button>
-          </a>
+          </Link>
         </div>
       </div>
     </header>
